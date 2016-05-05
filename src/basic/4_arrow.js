@@ -1,22 +1,21 @@
 /* eslint arrow-parens: "off" */
-describe('アロー関数などの関数シンタックス', () => {
+xdescribe('アロー関数などの関数シンタックス', () => {
   it('引数無しアロー関数', () => {
-    const func = () => 'Hello World';
+
+    // const func =  TODO  arrow関数で記述する
     expect(func()).toBe('Hello World');
   });
 
   it('引数ありアロー関数', () => {
-    const one = name => `Hello ${name}`;
+    // const one = TODO  arrow関数で記述する
     expect(one('Taro')).toBe('Hello Taro');
-    const two = (first, last) => `Hello ${first} ${last}`;
+
+    // const two = TODO  arrow関数で記述する
     expect(two('Taro', 'Yamada')).toBe('Hello Taro Yamada');
   });
 
   it('複数行アロー関数', () => {
-    const two = (first, last) => {
-      const greeting = `GoodEvening ${first} ${last}`;
-      return greeting;
-    };
+    // const two = TODO arrow関数で記述する
     expect(two('Taro', 'Yamada')).toBe('GoodEvening Taro Yamada');
   });
 
@@ -42,19 +41,20 @@ describe('アロー関数などの関数シンタックス', () => {
         return this;
       }
     };
-    // 処理系によって違う
-    expect(context.func()).toBeUndefined();
-    expect(context.func2()).toEqual(context);
-    expect(context.func3()).toBeUndefined();
-    expect(context.func4()).toEqual(context);
+
+    // 処理系によってコンテキストが異なることを確認する
+    expect(context.func()).toEqual(/* TODO */);
+    expect(context.func2()).toEqual(/* TODO */);
+    expect(context.func3()).toEqual(/* TODO */);
+    expect(context.func4()).toEqual(/* TODO */);
   });
 
   it('可変長引数', () => {
     const func = (one, two, ...args) => {
-      expect(one).toEqual(1);
-      expect(two).toEqual(2);
-      expect(args).toEqual([3, 4, 5, 'Hello World']);
-      expect(...args).toEqual(3);
+      expect(one).toEqual(/* TODO */);
+      expect(two).toEqual(/* TODO */);
+      expect(args).toEqual(/* TODO */);
+      expect(...args).toEqual(/* TODO */);
     };
 
     func(1, 2, 3, 4, 5, 'Hello World');
@@ -62,7 +62,7 @@ describe('アロー関数などの関数シンタックス', () => {
 
   it('デフォルト引数', () => {
     // nameのデフォルト値はYamada
-    const func = (name = 'Yamada') => `Hello ${name}`;
+    // const func = // TODO arrow関数で記述する
     expect(func()).toEqual('Hello Yamada');
     expect(func('Taro')).toEqual('Hello Taro');
   });
