@@ -31,4 +31,24 @@ xdescribe('letとconst', () => {
   // 再代入の動作を確認
   // hoge = 'hoga';
   });
+
+  it('ifとfor', () => {
+    // constで宣言
+    const hoge = 'hoge';
+    expect(hoge).toBe('hoge');
+    // ブロックスコープを定義
+    if (true) {
+      // 同じ変数名で宣言
+      const hoge = 'fuga';
+      expect(hoge).toBe('fuga');
+    }
+
+    expect(hoge).toBe('hoge');
+
+    let i = 100;
+    for (let i = 0; i < 1; i++) {
+      expect(i).toEqual(0);
+    }
+    expect(i).toEqual(100);
+  });
 });
