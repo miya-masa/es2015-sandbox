@@ -43,10 +43,9 @@ xdescribe('Promise', () => {
     // メッセージの確認
     //  expect(arg).toEqual('resolved');
     //  done();
-    //  Start TODO
     //  コメント外す↓
+    //  TODO
     //  delay({}).
-    //  End TODO
   });
 
   it('コールのチェーン', (done) => {
@@ -54,19 +53,16 @@ xdescribe('Promise', () => {
     // メッセージの確認
     //  expect(arg).toEqual('resolved');
     //  done();
-    //  Start TODO
     //  コメント外す↓
+    //  TODO
     //  delay({}).
-    //  End TODO
-    jasmine.clock().tick(100000);
   });
 
   it('Reject時のキャッチ', (done) => {
     // delay => tyenで"isReject = true"で再度delay => もう一度then(通らないはず) => 最後にcatch
-    //  Start TODO
     //  コメント外す↓
+    //  TODO
     //  delay({}).
-    //  End TODO
   });
 
   it('All.複数の非同期処理で同期を取る', (done) => {
@@ -75,8 +71,7 @@ xdescribe('Promise', () => {
     //  delay2()
     //  delay3()
     // 確認コード => expect(arg).toEqual(['comp1', 'comp2', 'comp3']);
-    //  Start TODO
-    //  End TODO
+    //  TODO
   });
 
   it('race.最初に終了した結果を取得する', (done) => {
@@ -85,7 +80,6 @@ xdescribe('Promise', () => {
     //  delay2()
     //  delay3()
     // 確認コード => expect(arg).toEqual('comp1');
-    //  Start TODO
-    //  End TODO
+    //  TODO
   });
 });

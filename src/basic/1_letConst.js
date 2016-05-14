@@ -2,14 +2,12 @@
 xdescribe('letとconst', () => {
   it('let', () => {
     // letで宣言
-    // START TODO
-    // END TODO
+    // TODO
     expect(hoge).toBe('hoge');
     // ブロックスコープを定義
     {
       // 同じ変数名で宣言
-      // START TODO
-      // END TODO
+      // TODO
       expect(hoge).toBe('fuga');
     }
     expect(hoge).toBe('hoge');
@@ -17,14 +15,12 @@ xdescribe('letとconst', () => {
 
   it('const', () => {
     // constで宣言
-    // START TODO
-    // END TODO
+    // TODO
     expect(hoge).toBe('hoge');
     // ブロックスコープを定義
     {
       // 同じ変数名で宣言
-      // START TODO
-      // END TODO
+      // TODO
       expect(hoge).toBe('fuga');
     }
     expect(hoge).toBe('hoge');

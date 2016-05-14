@@ -1,19 +1,17 @@
 // Personクラスを定義
 class Person {
-  // Start TODO
+  // TODO
   // コンストラクタ.
 
   // greetingメソッド
-  // End TODO
 }
 
 // Personを継承したBusinessPersonを定義
 class BusinessPerson extends Person {
-  // Start TODO
+  // TODO
   // コンストラクタ.
 
   // greegin メソッド.superを使って親のメソッドを呼び出してみる.
-  // End TODO
 }
 
 xdescribe('Class', () => {
