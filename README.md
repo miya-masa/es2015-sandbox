@@ -6,10 +6,10 @@
 3. 任意のディレクトリで以下のコマンドを実行
 
   ```txt
-   git clone https://github.com/miya-masa/es6-gulp.git
-   cd es6-gulp/es2015-sandbox
+   git clone https://github.com/miya-masa/es2015-sandbox.git
+   cd es2015-sandbox
    git checkout study
-   npm install -g eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint gulp
+   npm install -g gulp
    npm install
    npm run start
   ```
