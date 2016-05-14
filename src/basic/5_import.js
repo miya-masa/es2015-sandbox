@@ -1,3 +1,4 @@
+/* eslint  no-duplicate-imports: 0 */
 // see ./module/export
 // デフォルトモジュールをインポートする
 // TODO ./module/export からデフォルトモジュールをインポート
