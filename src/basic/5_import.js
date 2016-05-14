@@ -6,7 +6,6 @@
 // TODO ./module/export から"bar"をインポート
 // foo,baz,Hoge,fugaをインポートする
 // TODO ./module/export から"foo,baz,Hoge,fuga"を一気にインポートする
-import { foo, baz, Hoge, fuga } from './module/export';
 
 xdescribe('importの確認', () => {
   it('exportされたモジュールを利用する', () => {

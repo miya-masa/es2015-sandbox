@@ -15,23 +15,8 @@ xdescribe('その他のAPIとかシンタックスとか', () => {
     expect(map.get({})).toBeUndefined();
     expect(map.get(key)).toEqual('object key');
 
-    console.log('~~~~~~~~keys and values~~~~~~~~');
-
     // Mapの走査
-    for (let [key, value] of map) {
-      console.log(key);
-      console.log(value);
-    }
-
-    console.log('~~~~~~~~keys~~~~~~~~');
-    for (let key of map.keys()) {
-      console.log(key);
-    }
-
-    console.log('~~~~~~~~values~~~~~~~~');
-    for (let value of map.values()) {
-      console.log(value);
-    }
+    // TODO for of を使ったMAPの走査をしてコンソールに出力してみる
   });
 
   it('Set', () => {
@@ -70,7 +55,7 @@ xdescribe('その他のAPIとかシンタックスとか', () => {
       greeting: 'Hello'
     };
     // targetにマージする
-    Object.assign(target, greeting);
+    // TODO object assign を使ってtargetにgreetingをマージする
     expect(target.name).toEqual('abc');
     expect(target.greeting).toEqual('Hello');
   });
@@ -78,10 +63,7 @@ xdescribe('その他のAPIとかシンタックスとか', () => {
   it('Objectシンタックス', () => {
     const name = 'Yamada';
     const obj = {
-      name,
-      getName() {
-        return this.name;
-      }
+      // TODO オブジェクトのkey値省略方法で記述してみよう
     };
 
     expect(obj.getName()).toEqual('Yamada');
